@@ -28,7 +28,7 @@
 
   </head>
 
-  <body>
+  <body class="darko">
 
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top ">
@@ -50,6 +50,8 @@
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
+
+        <!-- <button class="dark-mode-toggle" aria-label="dark mode toggle button"></button> -->
 
       </div>
     </header>
@@ -88,7 +90,7 @@
         <div class="row justify-content-center align-items-center">
           <div class="col-md-6 ">
             <h2 style="font-size: 20pt;">Who are we? 🤔</h2>
-            <h3 style="font-size: 20px; color: #666; margin-bottom: 30px !important;">Google Developer Student Clubs are
+            <h3 style="font-size: 20px; color:var(--color); margin-bottom: 30px !important;">Google Developer Student Clubs are
               community groups for college and
               university students interested in
               Google developer technologies.
@@ -111,7 +113,7 @@
           </div>
           <div class="col-md-6 ">
             <h2 style="font-size: 20pt; margin-top: 30px !important;">Why join us? 🤚</h2>
-            <h3 style="color: #666; font-size: 20px;">Students from all undergraduate or graduate programs with an
+            <h3 style="color:var(--color); font-size: 20px;">Students from all undergraduate or graduate programs with an
               interest in growing as a developer are
               welcome. By joining a GDSC, students grow their knowledge in a peer-to-peer learning environment and build
               solutions for local businesses and their community.
@@ -217,7 +219,7 @@
           <ul>
             <li data-aos="fade-up" data-aos="fade-up" data-aos-delay="100">
               <i class="bx bx-help-circle icon-help" style="color: #ea4335 !important;"></i> <a
-                data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1" style="color: #333;">Who can
+                data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1" style="color: var(--color);">Who can
                 become a member? <i class="bx bx-chevron-down icon-show"></i><i
                   class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
@@ -232,7 +234,7 @@
 
             <li data-aos="fade-up" data-aos-delay="200">
               <i class="bx bx-help-circle icon-help" style="color: #4285F4;"></i> <a data-bs-toggle="collapse"
-                data-bs-target="#faq-list-2" class="collapsed" style="color: #333;">How frequently do events and
+                data-bs-target="#faq-list-2" class="collapsed" style="color:var(--color);">How frequently do events and
                 workshops
                 occur?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
@@ -245,7 +247,7 @@
 
             <li data-aos="fade-up" data-aos-delay="300">
               <i class="bx bx-help-circle icon-help" style="color: #34a853;"></i> <a data-bs-toggle="collapse"
-                data-bs-target="#faq-list-3" class="collapsed" style="color: #333;">What should I carry when attending a
+                data-bs-target="#faq-list-3" class="collapsed" style="color: var(--color);">What should I carry when attending a
                 workshop? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                 <p>
@@ -257,7 +259,7 @@
 
             <li data-aos="fade-up" data-aos-delay="400">
               <i class="bx bx-help-circle icon-help" style="color: #fbbc04;"></i> <a data-bs-toggle="collapse"
-                data-bs-target="#faq-list-4" class="collapsed" style="color: #333;">Who should I reach out to if I have
+                data-bs-target="#faq-list-4" class="collapsed" style="color: var(--color);">Who should I reach out to if I have
                 any questions? <i class="bx bx-chevron-down icon-show"></i><i
                   class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
@@ -293,7 +295,7 @@
 
     
    <!-- Footer -->
-<footer class="text-center text-lg-start bg-light text-muted">
+<footer id="foot" class="text-center text-lg-start  text-muted">
   <!-- Section: Social media -->
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
     <!-- Left -->
@@ -301,31 +303,31 @@
       <span>Get connected with us on social networks:</span>
     </div>
 
-    <div class=" contact-cards" style="width: 90px;">
+    <div class=" contact-cards" style="width: 90px;background-color: gray;">
       <a href="https://www.facebook.com/gdscsitsiliguri/?ref=page_internal"><i class="bi bi-facebook" style="color: #4267B2;"></i></a>
     </div>
 
-    <div class=" contact-cards" style="width: 90px;">
+    <div class=" contact-cards " style="width: 90px;background-color: gray;">
       <a href="https://www.instagram.com/gdsc_sit2021/"><i class="bi bi-instagram" style="color: #E1306C;"></i></a>
     </div>
 
-    <div class=" contact-cards" style="width: 90px;">
+    <div class=" contact-cards" style="width: 90px;background-color: gray;">
       <a href="https://github.com/gdscsit2021"><i class="bi bi-github" style="color: black;"></i></a>
     </div>
 
-    <div class=" contact-cards" style="width: 90px;">
+    <div class=" contact-cards" style="width: 90px;background-color: gray;">
       <a href="https://www.linkedin.com/company/gdsc-sit2020"><i class="bi bi-linkedin" style="color: #2867B2;"></i></a>
     </div>
 
-    <div class=" contact-cards" style="width: 90px;">
+    <div class=" contact-cards" style="width: 90px;background-color: gray;">
       <a href="https://www.youtube.com/channel/UCL4RSWr1nLoWuA_5uZ10k0g"><i class="bi bi-youtube" style="color: #f52525;"></i></a>
     </div>
 
-    <div class=" contact-cards" style="width: 90px;">
+    <div class=" contact-cards" style="width: 90px;background-color: gray;">
       <a href="https://twitter.com/gdsc_sit"><i class="bi bi-twitter" style="color: #4285F4;"></i></a>
     </div>
 
-    <div class=" contact-cards" style="width: 90px;">
+    <div class=" contact-cards" style="width: 90px;background-color: gray;">
       <a href="https://discord.gg/terfznUPhG"><i class="bi bi-discord" style="color: #4285F4;"></i></a>
     </div>
 
@@ -344,10 +346,10 @@
         <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
+          <h6 class="text-uppercase fw-bold mb-4"  style="color:var(--color);">
             <i class="fas fa-gem me-3"></i>Google Developer Student Club
           </h6>
-          <p>
+          <p style="color:var(--color);">
             GDSC is community groups for college and university students interested in Google developer technologies.
             It is a program supported by Google Developers.
           </p>
@@ -361,9 +363,9 @@
         <!-- Grid column -->
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-          <p><i class="fas fa-home me-3"></i> Siliguri Institute of Technology,Darjeeling-734009</p>
-          <p>
+          <h6 class="text-uppercase fw-bold mb-4" style="color:var(--color);">Contact</h6>
+          <p style="color:var(--color);"><i class="fas fa-home me-3"></i> Siliguri Institute of Technology,Darjeeling-734009</p>
+          <p style="color:var(--color);">
             <i class="fas fa-envelope me-3"></i>
             gdscsit2022@gmail.com
           </p>
@@ -377,7 +379,7 @@
   <!-- Section: Links  -->
 
   <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);color: var(--color);">
     © 2022-23 Copyright:
     <a class="text-reset fw-bold" href="https://mdbootstrap.com/">GDSC_SIT_Siliguri</a>
   </div>
