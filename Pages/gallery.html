@@ -22,6 +22,7 @@
   </head>
   <style>
     .head{
+        padding-top: 1.6vh;
         background: linear-gradient(
       45deg,
       rgba(86, 58, 250, 0.9) 0%,
@@ -36,18 +37,17 @@
     }
     .text{
         text-align: center;
-        /* font-weight: bolder; */
-        /* font-size: 0.7cm; */
+       
         font-family: 'Alkalami', serif;
     }
     #black{
         text-align: center;
-        animation: red1 3s ease infinite;
+        animation: black1 3s ease infinite;
     }
     
 
 
-@keyframes red1 {
+@keyframes black1 {
   0%,
   100% {
     color: black;
@@ -87,13 +87,16 @@
     #gal{
         margin-left: 12%;
     }
+    #header .logo a {
+  color: #fff;
+}
   </style>
   <body   >
     <header id="header " class="fixed-top head ">
         <div class="container d-flex align-items-center justify-content-between">
-          <h1 class="logo"><a style="font-family: 'Poppins'; font-size: 16pt; letter-spacing: 0px; font-weight: 500;"
-              href="../index.html"><img src="../assets/img/dsc_logo.png" alt="" class="img-fluid" style="height: 20px;"> GDSC
-              SIT</a></h1>
+            <h1 class="logo"><a style="font-family: 'Poppins'; font-size: 16pt; letter-spacing: 0px; font-weight: 500;"
+                href="../index.html"><img src="../assets/img/dsc_logo.png" alt="" class="img-fluid" style="height: 20px;"> GDSC
+                SIT</a></h1>
          
           <nav id="navbar "  class="navbar " >
             <ul>
