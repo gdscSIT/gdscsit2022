@@ -140,7 +140,29 @@
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
-
+<!-- Button for Scrolling Up -->
+<img src="../Images/arrow.png" id="topbtn" onclick="gotop()" alt="">
+<!-- Button for Scrolling Down -->
+<img src="../Images/arrow_down.png" id="downbtn" onclick="godown()" alt="hello">
 </body>
+<script>
+  var btntop=document.getElementById("topbtn");
+  window.onscroll = function() {topFun(),downfun()};
+  const topFun=()=>{
+    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+      btntop.style.display="block";
+    }
+    else btntop.style.display="none";
+  }
+  const gotop=()=>{
+    document.documentElement.scrollTop = 0;
+  }
+  var btndown= document.getElementById("downbtn");
+  const godown=()=>{
+    document.documentElement.scrollTop = 10000;
+  }
+
+
+</script>
 
 </html>

@@ -1876,3 +1876,33 @@ Domains .domain-header {
     left: 0%;
   }
 }
+#topbtn{
+  
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  display: none;
+  z-index:99;
+  cursor: pointer;
+  background-color: #34a853;
+  border-radius: 50%;
+}
+#topbtn:hover{
+  background-color: #346cf0;
+  
+}
+#downbtn{
+  
+  position: fixed;
+  bottom: 75px;
+  right: 10px;
+ 
+  z-index:99;
+  cursor: pointer;
+  background-color: #34a853;
+  border-radius: 50%;
+}
+#downbtn:hover{
+  background-color: #346cf0;
+  
+}
