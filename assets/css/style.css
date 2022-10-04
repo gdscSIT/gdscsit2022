@@ -10,6 +10,35 @@ body {
   color: #444444;
 }
 
+:root {
+	--bg:var(--bg);
+	--color:black;
+}
+
+body {
+	background-color: var(--bg);
+  color: var(--color);
+}
+.foot{
+  background-color: var(--bg);
+ }
+
+@media(prefers-color-scheme:dark){
+   body.darko{
+    --bg:black;
+	--color:white;
+   }
+   
+}
+@media(prefers-color-scheme:dark){
+  body.darkoo{
+   --bg:rgb(165, 144, 66);
+ --color:white;
+  }
+  
+}
+
+
 a {
   color: #5846f9;
   text-decoration: none;
@@ -74,13 +103,13 @@ h6 {
 
 .back-to-top i {
   font-size: 28px;
-  color: #fff;
+  color: var(--bg);
   line-height: 0;
 }
 
 .back-to-top:hover {
   background: #7b27d8;
-  color: #fff;
+  color: var(--bg);
 }
 
 .back-to-top.active {
@@ -99,7 +128,7 @@ h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: var(--bg);
 }
 
 #preloader:before {
@@ -108,7 +137,7 @@ h6 {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #5846f9;
-  border-top-color: #e7e4fe;
+  border-top-color: var(--bg);
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -174,7 +203,7 @@ h6 {
 }
 
 #header .logo a {
-  color: #fff;
+  color: white;
 }
 
 #header .logo img {
@@ -217,7 +246,7 @@ h6 {
   font-size: 15px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.7);
-  white-space: nowrap;
+  
   transition: 0.3s;
   position: relative;
 }
@@ -236,7 +265,7 @@ h6 {
   height: 2px;
   bottom: -5px;
   left: 0;
-  background-color: #fff;
+  background-color: var(--bg);
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -253,7 +282,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: #fff;
+  color: white;
 }
 
 .navbar .getstarted,
@@ -261,7 +290,7 @@ h6 {
   padding: 8px 25px;
   margin-left: 30px;
   border-radius: 5px;
-  color: #fff;
+  color: var(--bg);
   transition: 0.3s;
   font-size: 14px;
   font-weight: 600;
@@ -270,8 +299,8 @@ h6 {
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
-  color: #fff;
-  border-color: #fff;
+  color: var(--bg);
+  border-color: var(--bg);
 }
 
 .navbar .getstarted:before,
@@ -289,7 +318,7 @@ h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: var(--bg);
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
@@ -347,7 +376,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: var(--bg);
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -391,7 +420,7 @@ h6 {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: var(--bg);
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -432,7 +461,7 @@ h6 {
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: #fff;
+  background:var(--bg);
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
@@ -482,7 +511,7 @@ h6 {
   margin: 0;
   font-size: 52px;
   font-weight: 700;
-  color: #fff;
+  color: white;
 }
 
 #hero h2 {
@@ -501,12 +530,12 @@ h6 {
   border-radius: 100px;
   transition: 0.5s;
   margin-top: 30px;
-  color: #fff;
-  border: 2px solid #fff;
+  color: white;
+  border: 2px solid white;
 }
 
 #hero .btn-get-started:hover {
-  background: #fff;
+  background: var(--bg);
   color: #5846f9;
 }
 
@@ -601,7 +630,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f9f8ff;
+  background-color: var(--bg);
 }
 
 .section-title {
@@ -672,7 +701,7 @@ section {
   padding: 10px 50px 10px 28px;
   border-radius: 5px;
   transition: 0.5s;
-  color: #fff;
+  color: var(--bg);
   background: linear-gradient(45deg, #5846f9 0%, #7b27d8 100%);
   position: relative;
 }
@@ -704,7 +733,7 @@ section {
 .counts .counters span {
   font-size: 48px;
   display: block;
-  color: #fff;
+  color: var(--color);
   font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
@@ -713,7 +742,7 @@ section {
   padding: 0;
   margin: 0 0 20px 0;
   font-size: 15px;
-  color: white;
+  color: var(--color);
 }
 
 .home-cards {
@@ -748,7 +777,7 @@ section {
   text-align: center;
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
-  background: #fff;
+  background: var(--color);
 }
 
 .services .icon-box .icon {
@@ -776,7 +805,7 @@ section {
 
 .services .icon-box .icon svg path {
   transition: 0.5s;
-  fill: #f5f5f5;
+  fill: var(--bg);
 }
 
 .services .icon-box h4 {
@@ -797,7 +826,7 @@ section {
 }
 
 .services .icon-box:hover {
-  border-color: #fff;
+  border-color: var(--color);
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -806,7 +835,7 @@ section {
 }
 
 .services .iconbox-blue:hover .icon i {
-  color: #fff;
+  color: var(--color);
 }
 
 .services .iconbox-blue:hover .icon path {
@@ -818,7 +847,7 @@ section {
 }
 
 .services .iconbox-orange:hover .icon i {
-  color: #fff;
+  color: var(--bg);
 }
 
 .services .iconbox-orange:hover .icon path {
@@ -830,7 +859,7 @@ section {
 }
 
 .services .iconbox-pink:hover .icon i {
-  color: #fff;
+  color: var(--bg);
 }
 
 .services .iconbox-pink:hover .icon path {
@@ -842,7 +871,7 @@ section {
 }
 
 .services .iconbox-yellow:hover .icon i {
-  color: #fff;
+  color: var(--bg);
 }
 
 .services .iconbox-yellow:hover .icon path {
@@ -854,7 +883,7 @@ section {
 }
 
 .services .iconbox-red:hover .icon i {
-  color: #fff;
+  color: var(--bg);
 }
 
 .services .iconbox-red:hover .icon path {
@@ -866,7 +895,7 @@ section {
 }
 
 .services .iconbox-teal:hover .icon i {
-  color: #fff;
+  color: var(--bg);
 }
 
 .services .iconbox-teal:hover .icon path {
@@ -920,8 +949,8 @@ section {
   margin: -40px 0 0 40px;
   position: relative;
   z-index: 2;
-  border: 6px solid #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  border: 6px solid var(--color);
+  box-shadow: 0px 2px 15px var(--color);
 }
 
 .testimonials .testimonial-item h3 {
@@ -960,12 +989,12 @@ section {
   font-style: italic;
   margin: 0 15px 0 15px;
   padding: 20px 20px 60px 20px;
-  background: #fff;
+  background: var(--color);
   position: relative;
   border-radius: 6px;
   position: relative;
   z-index: 1;
-  box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 20px 0 white;
 }
 
 .testimonials .swiper-pagination {
@@ -976,7 +1005,7 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: var(--bg);
   opacity: 1;
   border: 1px solid #5846f9;
 }
@@ -1024,7 +1053,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #fff;
+  color: var(--color);
   background: #5846f9;
 }
 
@@ -1065,12 +1094,12 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: #fff;
+  color: var(--color);
   font-weight: 600;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: #ffffff;
+  color: var(--color);
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -1095,7 +1124,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #fff;
+  color: var(--color);
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -1138,7 +1167,7 @@ section {
   .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: var(--bg);
   opacity: 1;
   border: 1px solid #5846f9;
 }
@@ -1160,7 +1189,7 @@ section {
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--bg);
 }
 
 .portfolio-details .portfolio-info ul {
@@ -1192,7 +1221,7 @@ section {
 --------------------------------------------------------------*/
 .pricing .box {
   padding: 20px;
-  background: #fff;
+  background: var(--bg);
   text-align: center;
   border-radius: 5px;
   position: relative;
@@ -1207,7 +1236,7 @@ section {
   font-size: 16px;
   font-weight: 600;
   color: #2c4964;
-  background: #f8f8f8;
+  background: var(--bg);
 }
 
 .pricing h4 {
@@ -1257,7 +1286,7 @@ section {
 .pricing .btn-wrap {
   margin: 20px -20px -20px -20px;
   padding: 20px 15px;
-  background: #f8f8f8;
+  background: var(--bg);
   text-align: center;
 }
 
@@ -1266,7 +1295,7 @@ section {
   display: inline-block;
   padding: 10px 35px;
   border-radius: 4px;
-  color: #fff;
+  color: var(--bg);
   transition: none;
   font-size: 15px;
   font-weight: 400;
@@ -1280,7 +1309,7 @@ section {
 }
 
 .pricing .featured h3 {
-  color: #fff;
+  color: var(--bg);
   background: #5846f9;
 }
 
@@ -1294,7 +1323,7 @@ section {
   font-size: 14px;
   padding: 1px 0 3px 0;
   background: #5846f9;
-  color: #fff;
+  color: var(--bg);
 }
 
 /*--------------------------------------------------------------
@@ -1306,7 +1335,7 @@ section {
 
 .faq .section-title h2,
 .faq .section-title p {
-  color: #fff;
+  color: var(--color);
 }
 
 .faq .section-title h2::after {
@@ -1328,7 +1357,7 @@ section {
 
 .faq .faq-list li {
   padding: 30px;
-  background: #fff;
+  background: var(--bg);
   border-radius: 5px;
   position: relative;
 }
@@ -1350,7 +1379,7 @@ section {
   position: absolute;
   right: 0;
   left: 20px;
-  color: #8577fb;
+  color: var(--color);
 }
 
 .faq .faq-list .icon-show,
@@ -1365,7 +1394,7 @@ section {
   font-family: "Poppins";
   margin-bottom: 0;
   padding: 10px 0 0 0;
-  color: #666;
+  color: var(--color);
 }
 
 .faq .faq-list .icon-show {
@@ -1419,7 +1448,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #f2f6f9;
+  background: var(--bg);
   min-height: 40px;
   margin-top: 85px;
 }
@@ -1478,7 +1507,7 @@ section {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: var(--bg);
 }
 
 /* Handle */
@@ -1521,6 +1550,7 @@ Domains .domain-header {
 .cards {
   width: 319px;
   height: 530px;
+  background-color: rgb(71, 154, 71);
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(99, 114, 130, 0.3);
   transition: all ease 0.3s;
@@ -1554,7 +1584,7 @@ Domains .domain-header {
   font-size: 15pt;
   margin-bottom: 20px;
   letter-spacing: -1px;
-  background: #ffffff;
+  background: var(--bg)fff;
   border-bottom: none;
 }
 
@@ -1752,7 +1782,7 @@ Domains .domain-header {
   content: "";
   position: absolute;
   width: 6px;
-  background-color: white;
+  background-color: var(--bg);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -1776,7 +1806,7 @@ Domains .domain-header {
   height: 25px;
   right: -16px;
 
-  background-color: white;
+  background-color: var(--bg);
   border: 4px solid #346cf0;
   top: 15px;
   border-radius: 50%;
@@ -1802,9 +1832,9 @@ Domains .domain-header {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid white;
+  border: medium solid var(--bg);
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
+  border-color: transparent transparent transparent var(--bg);
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -1816,9 +1846,9 @@ Domains .domain-header {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid white;
+  border: medium solid var(--bg);
   border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  border-color: transparent var(--bg) transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -1829,7 +1859,7 @@ Domains .domain-header {
 /* The actual content */
 .content-ev {
   padding: 20px 30px;
-  background-color: white;
+  background-color: var(--bg);
   /* background-repeat: no-repeat; */
   background-size: contain;
   position: relative;
@@ -1860,9 +1890,9 @@ Domains .domain-header {
   /* Make sure that all arrows are pointing leftwards */
   .container-ev::before {
     left: 60px;
-    border: medium solid white;
+    border: medium solid var(--bg);
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent var(--bg) transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
@@ -1876,3 +1906,13 @@ Domains .domain-header {
     left: 0%;
   }
 }
+
+/* @media (prefers-color-scheme:dark){
+	body.darkable{
+		--body-background: hsla(0, 0%, 12%, 1);
+		--header-background: rgba(0, 0, 0, 0.7);
+		--text-color: var(--bg);
+		--important-text-color: var(--bg);
+		--nav-link-hover-background-color: rgba(255, 255, 255, 0.2);
+	}
+} */
